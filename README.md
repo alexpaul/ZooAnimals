@@ -1,6 +1,6 @@
 # ZooAnimals
 
-Using Custom Cells and UITableViewDelegate.
+Using Custom Cells, UITabBarController, UITableViewDelegate.
 
 #### Storyboard 
 ![storyboard](Assets/zoo-animals-storyboard.png)
