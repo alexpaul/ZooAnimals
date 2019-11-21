@@ -7,3 +7,5 @@ Using Custom Cells, UITabBarController, UITableViewDelegate.
 
 #### Main UI 
 ![main ui](Assets/custom-cells-zoo-animals.png)
+
+## [Lecture Video](https://youtu.be/h7zd-CkkboE)
