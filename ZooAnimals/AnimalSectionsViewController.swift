@@ -29,6 +29,22 @@ class AnimalSectionsViewController: UIViewController {
   func loadData() {
     animalClassifications = ZooAnimal.classificationSections()
   }
+  
+  override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+    // we need the segue.destination view contrller we are navigating to
+    // we need the indexPath that was selected
+    
+    guard let detailViewController = segue.destination as? AnimalDetailViewController,
+      let indexPath = tableView.indexPathForSelectedRow else {
+      fatalError("failed to get indexPath and detailViewController")
+    }
+    
+    // get currently selected object (ZooAnimal)
+    let animal = animalClassifications[indexPath.section][indexPath.row]
+    
+    // set the detailViewController's animal object
+    detailViewController.animal = animal
+  }
 }
 
 extension AnimalSectionsViewController: UITableViewDataSource {
@@ -38,14 +54,26 @@ extension AnimalSectionsViewController: UITableViewDataSource {
   }
   
   func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-    guard let cell = tableView.dequeueReusableCell(withIdentifier: "animalCell", for: indexPath) as? AnimalCell else {
-      fatalError("couldn't dequeue an AnimalCell")
+    // alternate left and right image cells base on even or odd modulo remainder
+    
+    var cell: AnimalCell! // implicit unwrapping
+        
+    if indexPath.section % 2 == 0 { // even
+      guard let animalCell = tableView.dequeueReusableCell(withIdentifier: "rightImageCell", for: indexPath) as? AnimalCell else {
+        fatalError("couldn't dequeue a rightImageCell")
+      }
+      cell = animalCell
+    } else { // odd
+      guard let animalCell = tableView.dequeueReusableCell(withIdentifier: "leftImageCell", for: indexPath) as? AnimalCell else {
+        fatalError("couldn't dequeue a leftImageCell")
+      }
+      cell = animalCell
     }
     
-    // get the animal at the current indexPath
+    // get the animal at the indexPath
     let animal = animalClassifications[indexPath.section][indexPath.row]
     
-    // configure the cell
+    // congigure the cell using the animal object retrieved from above
     cell.configureCell(for: animal)
     
     return cell

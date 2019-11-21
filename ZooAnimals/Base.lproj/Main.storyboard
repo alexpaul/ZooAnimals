@@ -16,7 +16,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="9bj-MH-Tkt">
-                                <rect key="frame" x="0.0" y="140" width="414" height="673"/>
+                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="animalCell" textLabel="iQ5-j5-F0L" detailTextLabel="IP8-rQ-ePG" style="IBUITableViewCellStyleSubtitle" id="jaq-u9-1Zr">
@@ -73,7 +73,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="fNM-55-zJC">
-                                <rect key="frame" x="0.0" y="140" width="414" height="673"/>
+                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="animalCell" rowHeight="140" id="Qys-Qb-F5N" customClass="AnimalCell" customModule="ZooAnimals" customModuleProvider="target">
@@ -160,10 +160,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="zgt-2P-5P4">
-                                <rect key="frame" x="0.0" y="140" width="414" height="673"/>
+                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="animalCell" rowHeight="140" id="kqM-PM-MsX" customClass="AnimalCell" customModule="ZooAnimals" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="rightImageCell" rowHeight="140" id="kqM-PM-MsX" customClass="AnimalCell" customModule="ZooAnimals" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="414" height="140"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="kqM-PM-MsX" id="dVf-nt-jkT">
@@ -215,6 +215,62 @@
                                             <outlet property="animalImageView" destination="Ijc-Mz-S7L" id="wJs-wf-cvf"/>
                                             <outlet property="animalNameLabel" destination="1ww-P5-ehy" id="9Y6-Tf-XJw"/>
                                             <outlet property="animalOriginLabel" destination="eex-wD-bvW" id="GfB-Dj-7qO"/>
+                                            <segue destination="rz0-R6-akD" kind="show" id="7Vd-Kd-3e3"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="leftImageCell" rowHeight="140" id="ual-vB-8Dq" customClass="AnimalCell" customModule="ZooAnimals" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="168" width="414" height="140"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ual-vB-8Dq" id="rnJ-qj-XBo">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="140"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="UHC-oo-adi">
+                                                    <rect key="frame" x="0.0" y="0.0" width="140" height="140"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="140" id="z3e-ko-WOB"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Animal Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bS2-P9-cay">
+                                                    <rect key="frame" x="148" y="19" width="238" height="21"/>
+                                                    <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Classification" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xDM-uC-ZLx">
+                                                    <rect key="frame" x="148" y="48" width="238" height="18"/>
+                                                    <fontDescription key="fontDescription" style="UICTFontTextStyleSubhead"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Origin" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mjx-yc-pDR">
+                                                    <rect key="frame" x="148" y="119" width="238" height="18"/>
+                                                    <fontDescription key="fontDescription" style="UICTFontTextStyleSubhead"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="trailingMargin" secondItem="bS2-P9-cay" secondAttribute="trailing" constant="8" id="0gj-S4-CzZ"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="mjx-yc-pDR" secondAttribute="trailing" constant="8" id="1vr-hH-stF"/>
+                                                <constraint firstItem="bS2-P9-cay" firstAttribute="top" secondItem="rnJ-qj-XBo" secondAttribute="topMargin" constant="8" id="2fT-w3-yU4"/>
+                                                <constraint firstItem="UHC-oo-adi" firstAttribute="top" secondItem="rnJ-qj-XBo" secondAttribute="top" id="4qh-HV-Zie"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="xDM-uC-ZLx" secondAttribute="trailing" constant="8" id="Dgc-lP-1G6"/>
+                                                <constraint firstAttribute="bottom" secondItem="UHC-oo-adi" secondAttribute="bottom" id="Oj0-IB-gI5"/>
+                                                <constraint firstItem="mjx-yc-pDR" firstAttribute="bottom" secondItem="rnJ-qj-XBo" secondAttribute="bottomMargin" constant="8" id="SxL-YZ-EiE"/>
+                                                <constraint firstItem="xDM-uC-ZLx" firstAttribute="leading" secondItem="UHC-oo-adi" secondAttribute="trailing" constant="8" id="d6W-Pv-nQc"/>
+                                                <constraint firstItem="UHC-oo-adi" firstAttribute="leading" secondItem="rnJ-qj-XBo" secondAttribute="leading" id="dnt-C7-r1x"/>
+                                                <constraint firstItem="bS2-P9-cay" firstAttribute="leading" secondItem="UHC-oo-adi" secondAttribute="trailing" constant="8" id="fQS-af-Spt"/>
+                                                <constraint firstItem="xDM-uC-ZLx" firstAttribute="top" secondItem="bS2-P9-cay" secondAttribute="bottom" constant="8" id="hSZ-dA-Sux"/>
+                                                <constraint firstItem="mjx-yc-pDR" firstAttribute="leading" secondItem="UHC-oo-adi" secondAttribute="trailing" constant="8" id="lVV-k1-oDW"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="animalClassificationLabel" destination="xDM-uC-ZLx" id="fb3-bm-HDU"/>
+                                            <outlet property="animalImageView" destination="UHC-oo-adi" id="eei-lZ-3ip"/>
+                                            <outlet property="animalNameLabel" destination="bS2-P9-cay" id="iP0-pU-YFG"/>
+                                            <outlet property="animalOriginLabel" destination="mjx-yc-pDR" id="6Hd-Bd-XvX"/>
+                                            <segue destination="rz0-R6-akD" kind="show" id="rCj-Tn-Aw8"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -237,6 +293,74 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lhr-yB-MnE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2882.608695652174" y="1512.7232142857142"/>
+        </scene>
+        <!--Animal Detail View Controller-->
+        <scene sceneID="xMK-FF-Gu8">
+            <objects>
+                <viewController id="rz0-R6-akD" customClass="AnimalDetailViewController" customModule="ZooAnimals" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="4Rr-2q-LGW">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="mD6-zL-2rz">
+                                <rect key="frame" x="0.0" y="140" width="414" height="313.5"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="51" translatesAutoresizingMaskIntoConstraints="NO" id="833-xm-uiQ">
+                                <rect key="frame" x="20" y="461.5" width="374" height="20.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" text="Origin" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7We-QE-D0u">
+                                        <rect key="frame" x="0.0" y="0.0" width="46" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Classification" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MQV-hY-6iT">
+                                        <rect key="frame" x="97" y="0.0" width="277" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20.5" id="8lf-L7-52i"/>
+                                </constraints>
+                            </stackView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u8S-2t-Yx8">
+                                <rect key="frame" x="20" y="490" width="374" height="303"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="pkm-L8-O6l" firstAttribute="bottom" secondItem="u8S-2t-Yx8" secondAttribute="bottom" constant="20" id="3xu-3D-CKc"/>
+                            <constraint firstItem="833-xm-uiQ" firstAttribute="leading" secondItem="pkm-L8-O6l" secondAttribute="leading" constant="20" id="6yH-bz-8d4"/>
+                            <constraint firstItem="u8S-2t-Yx8" firstAttribute="top" secondItem="833-xm-uiQ" secondAttribute="bottom" constant="8" id="CDD-AN-pS9"/>
+                            <constraint firstItem="mD6-zL-2rz" firstAttribute="top" secondItem="pkm-L8-O6l" secondAttribute="top" id="ENo-bh-F2x"/>
+                            <constraint firstItem="pkm-L8-O6l" firstAttribute="trailing" secondItem="833-xm-uiQ" secondAttribute="trailing" constant="20" id="FoN-ZS-7bu"/>
+                            <constraint firstItem="u8S-2t-Yx8" firstAttribute="leading" secondItem="pkm-L8-O6l" secondAttribute="leading" constant="20" id="KoU-3V-tbU"/>
+                            <constraint firstItem="833-xm-uiQ" firstAttribute="top" secondItem="mD6-zL-2rz" secondAttribute="bottom" constant="8" id="QXz-Tn-HAz"/>
+                            <constraint firstItem="mD6-zL-2rz" firstAttribute="leading" secondItem="pkm-L8-O6l" secondAttribute="leading" id="Svm-NU-yPG"/>
+                            <constraint firstItem="pkm-L8-O6l" firstAttribute="trailing" secondItem="u8S-2t-Yx8" secondAttribute="trailing" constant="20" id="UxG-mF-g0Q"/>
+                            <constraint firstItem="mD6-zL-2rz" firstAttribute="trailing" secondItem="pkm-L8-O6l" secondAttribute="trailing" id="pJA-nw-kcE"/>
+                            <constraint firstItem="mD6-zL-2rz" firstAttribute="height" secondItem="4Rr-2q-LGW" secondAttribute="height" multiplier="0.35" id="rad-bM-aho"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="pkm-L8-O6l"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Z1E-Yy-Ixq"/>
+                    <connections>
+                        <outlet property="animalClassificationLabel" destination="MQV-hY-6iT" id="IMk-TO-gLI"/>
+                        <outlet property="animalImageView" destination="mD6-zL-2rz" id="VFJ-s3-ep0"/>
+                        <outlet property="animalInfoTextView" destination="u8S-2t-Yx8" id="MH4-h7-Cdo"/>
+                        <outlet property="animalOrigin" destination="7We-QE-D0u" id="GoV-Qw-lN9"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Wwv-51-Wqg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3740.579710144928" y="817.63392857142856"/>
         </scene>
         <!--Subtitle Cell-->
         <scene sceneID="6hl-Va-aBk">
@@ -321,4 +445,7 @@
         <image name="2.circle" catalog="system" width="64" height="60"/>
         <image name="3.circle" catalog="system" width="64" height="60"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="rCj-Tn-Aw8"/>
+    </inferredMetricsTieBreakers>
 </document>

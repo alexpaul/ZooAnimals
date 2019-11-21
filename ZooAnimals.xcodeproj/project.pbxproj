@@ -13,6 +13,7 @@
 		570BED9A23838AB9002F7F76 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 570BED9923838AB9002F7F76 /* Assets.xcassets */; };
 		570BED9D23838AB9002F7F76 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 570BED9B23838AB9002F7F76 /* LaunchScreen.storyboard */; };
 		570BEDA523838AFF002F7F76 /* ZooAnimal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 570BEDA423838AFF002F7F76 /* ZooAnimal.swift */; };
+		571258712385982A00805579 /* AnimalDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 571258702385982A00805579 /* AnimalDetailViewController.swift */; };
 		57A964A92384644B006AA905 /* AnimalCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57A964A82384644B006AA905 /* AnimalCell.swift */; };
 		57DBEFD523844E2300F25F9C /* BasicAnimalCellController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57DBEFD423844E2300F25F9C /* BasicAnimalCellController.swift */; };
 		57DBEFD723844E4100F25F9C /* CustomCellViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57DBEFD623844E4100F25F9C /* CustomCellViewController.swift */; };
@@ -28,6 +29,7 @@
 		570BED9C23838AB9002F7F76 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		570BED9E23838AB9002F7F76 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		570BEDA423838AFF002F7F76 /* ZooAnimal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZooAnimal.swift; sourceTree = "<group>"; };
+		571258702385982A00805579 /* AnimalDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalDetailViewController.swift; sourceTree = "<group>"; };
 		57A964A82384644B006AA905 /* AnimalCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalCell.swift; sourceTree = "<group>"; };
 		57DBEFD423844E2300F25F9C /* BasicAnimalCellController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicAnimalCellController.swift; sourceTree = "<group>"; };
 		57DBEFD623844E4100F25F9C /* CustomCellViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCellViewController.swift; sourceTree = "<group>"; };
@@ -71,6 +73,7 @@
 				57DBEFD623844E4100F25F9C /* CustomCellViewController.swift */,
 				57A964A82384644B006AA905 /* AnimalCell.swift */,
 				57DBEFD823844E6700F25F9C /* AnimalSectionsViewController.swift */,
+				571258702385982A00805579 /* AnimalDetailViewController.swift */,
 				570BED9623838AB7002F7F76 /* Main.storyboard */,
 				570BED9923838AB9002F7F76 /* Assets.xcassets */,
 				570BED9B23838AB9002F7F76 /* LaunchScreen.storyboard */,
@@ -156,6 +159,7 @@
 				57DBEFD523844E2300F25F9C /* BasicAnimalCellController.swift in Sources */,
 				57DBEFD723844E4100F25F9C /* CustomCellViewController.swift in Sources */,
 				570BED9323838AB7002F7F76 /* SceneDelegate.swift in Sources */,
+				571258712385982A00805579 /* AnimalDetailViewController.swift in Sources */,
 				57A964A92384644B006AA905 /* AnimalCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
